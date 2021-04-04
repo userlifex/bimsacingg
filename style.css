@@ -4,15 +4,19 @@
 }
 
 .caja {
-    /* width: 200px; */
-    /* height: 50px; */
+    width: 200px;
+    height: 200px;
     background-color: blue;
     /* border: 5px solid black; */
     /* padding-top: 30px; */
     /* margin-top: 50px; */
     /* margin-bottom: 100px; */
     margin: 20px;
-    border: 10px dashed black;
+    /* padding: 10px; */
+    border-left: black 2px solid;
+    border-bottom: gray 1px solid;
+    /* border-radius: 50%; */
+    /* border: 10px dashed black; */
     /* margin-top: 10px;
     margin-right: 10px;
     margin-bottom: 10px;
@@ -22,10 +26,81 @@
 
 .rojo {
     background-color: red;
+    width: 50%;
 }
 
 .amarilla {
     background-color: yellow;
+    width: 50%;
+}
+
+.unidades {
+    background-color: brown;
+}
+
+.px {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+}
+
+.vh-vw {
+    width: 50vw;
+    /* height: 100vh; */
+    min-width: 20rem;
+    max-width: 25rem;
+}
+
+.img-container {
+    display: inline-block;
+    width: 50vw;
+    min-width: 320px;
+}
+
+.img-container img {
+    width: 100%;
+}
+
+.em {
+    font-size: 1rem;
+}
+
+.em2 {
+    font-size: 2rem;
+}
+
+.em3 {
+    font-size: 1rem;
+}
+
+.kidspolla {
+    width: 10cm;
+    height: 1rem;
+    background-color: chocolate;
+    display: flex;
+}
+
+.uncm {
+    width: 1cm;
+    height: inherit;
+    border-right: 0.1cm black solid;
+    margin: 0;
+}
+
+.color {
+    color: blue;
+}
+
+#colorid {
+    color: lawngreen;
+}
+
+p {
+    color: aquamarine !important;
+}
+
+.mecargotodo {
+    color: deeppink !important;
 }
 
 
@@ -33,4 +108,4 @@
 
 . clases
 
-# id00
+# id00*/
