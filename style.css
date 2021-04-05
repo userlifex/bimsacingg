@@ -3,6 +3,11 @@
     margin: 0;
 }
 
+:root {
+    --color: rgb(255, 0, 0);
+    --border: red 2px solid;
+}
+
 .caja {
     width: 200px;
     height: 200px;
@@ -11,9 +16,9 @@
     /* padding-top: 30px; */
     /* margin-top: 50px; */
     /* margin-bottom: 100px; */
-    margin: 20px;
+    margin: 0 auto;
     /* padding: 10px; */
-    border-left: black 2px solid;
+    border-left: var(--border);
     border-bottom: gray 1px solid;
     /* border-radius: 50%; */
     /* border: 10px dashed black; */
@@ -74,7 +79,7 @@
 }
 
 .kidspolla {
-    width: 10cm;
+    width: 23cm;
     height: 1rem;
     background-color: chocolate;
     display: flex;
@@ -96,16 +101,115 @@
 }
 
 p {
-    color: aquamarine !important;
+    color: aquamarine;
 }
 
 .mecargotodo {
     color: deeppink !important;
 }
 
+h1 {
+    color: blueviolet;
+}
+
+.combinador {
+    text-align: center;
+    /* color: tomato; */
+}
+
+.combinador h1,
+.combinador p {
+    color: tomato;
+}
+
+.combinador h2 {
+    color: var(--color);
+}
+
+.combinador::after {
+    content: 'hola estoy despues';
+    color: yellowgreen;
+}
+
+.combinador::before {
+    content: 'hola estoy antes';
+    color: darkblue;
+}
+
+
+/* input {
+    position: relative;
+    width: 100%;
+}
+
+input.date::before {
+    content: '';
+    position: absolute;
+    overflow: hidden;
+    margin-bottom: 4px;
+    right: 4%;
+    width: 20px;
+    height: 20px;
+    border-left: 3px solid black;
+    border-bottom: 3px solid black;
+    transform: rotate(-45deg);
+    transition: all 0.25s ease;
+    pointer-events: none;
+}
+ */
+
+
+/* [type="date"]::-webkit-inner-spin-button {
+    display: none;
+} */
+
 
 /* 
+[type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+} */
+
+
+/* 
+div .combinador{
+
+}
 
 . clases
 
 # id00*/
+
+.box {
+    position: relative;
+    width: 50vw;
+    height: 50vh;
+    background-color: red;
+    border: 4px black solid;
+    margin: 1rem auto;
+}
+
+.box-hija {
+    position: absolute;
+    /* left: -50px; */
+    /* bottom: 0; */
+    right: 0;
+    top: 0;
+}
+
+.red {
+    /* top, left, right, bottom: ; */
+    /* position: absolute; */
+    /* top: 50px; */
+    /* left: 50%; */
+    /* top: 50%; */
+    /* bottom: 10%; */
+    /* top: 100m; */
+}
+
+.blue {
+    background-color: blue;
+}
+
+.green {
+    background-color: chartreuse;
+}
