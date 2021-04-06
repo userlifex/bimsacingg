@@ -8,7 +8,20 @@
     --border: red 2px solid;
 }
 
+.nav {
+    z-index: 2;
+    width: 100vw;
+    margin: 0;
+    height: 5rem;
+    background-color: darkslategrey;
+    position: fixed;
+    top: 0;
+}
+
 .caja {
+    z-index: 999999;
+    /* position: relative; */
+    position: relative;
     width: 200px;
     height: 200px;
     background-color: blue;
@@ -16,7 +29,7 @@
     /* padding-top: 30px; */
     /* margin-top: 50px; */
     /* margin-bottom: 100px; */
-    margin: 0 auto;
+    /* margin: 0 auto; */
     /* padding: 10px; */
     border-left: var(--border);
     border-bottom: gray 1px solid;
@@ -212,4 +225,40 @@ div .combinador{
 
 .green {
     background-color: chartreuse;
+}
+
+header {}
+
+main {
+    margin-top: 5rem;
+    /* z-index: ; */
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    justify-content: space-around;
+    /* eje la POLLA DEL NI;O */
+    align-items: flex-start;
+    /* justify-content: flex-start; */
+    /* justify-content: flex-end; */
+    /* flex-direction: column-reverse; */
+    background-color: fuchsia;
+    border: 1px solid black;
+}
+
+.flex-item {
+    margin: 1rem 2rem;
+    font-size: 5rem;
+    color: floralwhite;
+}
+
+.doce {
+    order: -1;
+}
+
+.catorce {
+    order: -8;
 }
