@@ -3,6 +3,27 @@
     margin: 0;
 }
 
+h1,h2,h3{
+    font-weight: bold;
+}
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+}
+
+h3 {
+    font-size: 1.5rem
+}
+
+body {}
+
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+}
+
 :root {
     --color: rgb(255, 0, 0);
     --border: red 2px solid;
@@ -20,11 +41,15 @@
 
 .caja {
     z-index: 999999;
+    cursor: pointer;
     /* position: relative; */
     position: relative;
     width: 200px;
     height: 200px;
     background-color: blue;
+    /* background-image: url('/loli.webp'); */
+    background-size: contain;
+    background-repeat: no-repeat;
     /* border: 5px solid black; */
     /* padding-top: 30px; */
     /* margin-top: 50px; */
@@ -40,6 +65,12 @@
     margin-bottom: 10px;
     margin-left: 10px; */
     /* margin: 250px 60px 150px 60px; */
+}
+
+.caja:hover {
+    /* display: none; */
+    /* visibility: hidden; */
+    opacity: 0.5;
 }
 
 .rojo {
@@ -60,6 +91,15 @@
     width: 100px;
     height: 100px;
     border: 1px solid black;
+}
+
+.perfect-blue {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('/perfect-blue.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    /* la wwea fome */
 }
 
 .vh-vw {
@@ -92,13 +132,14 @@
 }
 
 .kidspolla {
-    width: 23cm;
+    /* width: 23cm; */
     height: 1rem;
-    background-color: chocolate;
     display: flex;
+    border-radius: 1rem;
 }
 
 .uncm {
+    background-color: chocolate;
     width: 1cm;
     height: inherit;
     border-right: 0.1cm black solid;
@@ -256,9 +297,31 @@ main {
 }
 
 .doce {
-    order: -1;
+    /* order: -1; */
 }
 
 .catorce {
-    order: -8;
+    /* order: -8; */
+}
+
+.grid-containerxd {
+    display: grid;
+    /* grid-template-columns: 25% 25% 25% 25%; */
+    /* grid-template-columns: repeat(12, 8.3%); */
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1rem;
+    /* fr */
+    /* height: 100px; */
+}
+
+.grid-item {
+    width: 100%;
+    height: 50px;
+    background-color: aquamarine;
+    border: 5px black dashed;
+}
+
+.item-1 {
+    grid-column: span 8;
+    grid-row-start: 2;
 }
